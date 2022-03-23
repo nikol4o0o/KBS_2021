@@ -1,0 +1,9 @@
+Silk#500#2200
+Cars#650#5000
+Gold#1200#1000
+Microchips#300#900
+Petrol#1250#3400
+Gas#400#1230
+Laptops#230#1230
+Cobalt#350#4000
+Medicine#2000#1000

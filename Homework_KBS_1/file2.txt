@@ -1,0 +1,8 @@
+Coffe#500#220
+iPhones#450#560
+Cobalt#400#3500
+Platinium#700#3333
+Weapons#150#1200
+Gas#400#1230
+Laptops#230#1230
+Sugar#100#1000
