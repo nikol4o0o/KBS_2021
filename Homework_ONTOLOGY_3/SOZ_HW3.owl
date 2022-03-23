@@ -1,0 +1,1166 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sustenance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasIngredient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isGarnishOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasIngredient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isGroundIngedientOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sustenance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sustenance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasIngredient">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isIngredientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sustenance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sustenance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGarnish"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweetness"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isGarnishOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isGarnishOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isGroundIngedientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isGroundIngedientOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#isIngredientOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Baking_powder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Baking_powder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Bean_paste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Bean_paste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SavoryGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Butter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Butter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Cheese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Cheese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SavoryGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Coconut_milk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Coconut_milk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Cooked_eggs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Cooked_eggs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SavoryGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Country">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#DomainThing"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ethiopia"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#France"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Germany"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Indonesia"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Italy"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Scottland"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweden"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Crepes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Crepes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#NamedPancakes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Maple_syrup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Eggs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Crespelle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Crespelle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#NamedPancakes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Cheese"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Noodle_dough"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Crumpet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Crumpet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#NamedPancakes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Butter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Milk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Scottland"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Custard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Custard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#DomainThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#DomainThing">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Eggs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Eggs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ethiopian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ethiopian">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Cooked_eggs"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Meat_sauce"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Vegetables"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Eggs"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Flour"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Milk"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sugar"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ethiopia"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Flour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Flour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#French -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#French">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Fruit"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ice_cream"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Maple_syrup"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Whipped_cream"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Eggs"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Flour"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Milk"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sugar"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#France"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Fruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Fruit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Low"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#German -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#German">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Jam"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Lemons"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Powdered_sugar"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Eggs"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Flour"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Milk"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sugar"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Germany"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#High">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweetness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ice_cream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ice_cream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Indonesian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Indonesian">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Bean_paste"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Cheese"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Custard"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Peanut"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Baking_powder"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Coconut_milk"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Eggs"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Rice_flour"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sugar"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Indonesia"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Italian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Italian">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Noodle_dough"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                                <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Italy"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Cheese"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Jam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Jam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Lemons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Lemons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SavoryGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Low -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Low">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweetness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Maple_syrup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Maple_syrup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Meat_sauce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Meat_sauce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SavoryGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweetness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Milk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Milk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#NamedPancakes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#NamedPancakes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#NonSweetGarnish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#NonSweetGarnish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGarnish"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetGarnish"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweetness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Noodle_dough -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Noodle_dough">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sustenance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGarnish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGarnish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sustenance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sustenance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Peanut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Peanut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SavoryGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pfannkuchen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pfannkuchen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#NamedPancakes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Lemons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Flour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Plättar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Plättar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#NamedPancakes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ice_cream"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Powdered_sugar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Powdered_sugar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Rice_flour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Rice_flour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SavoryGarnish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SavoryGarnish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGarnish"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Scottish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Scottish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Butter"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ice_cream"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Jam"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Whipped_cream"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Eggs"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Flour"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Milk"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sugar"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Scottland"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Seafood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Seafood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SavoryGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Serabi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Serabi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#NamedPancakes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Bean_paste"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Rice_flour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Indonesia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sugar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sugar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sugar_Garnish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sugar_Garnish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sustenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sustenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Swedish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Swedish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGarnish"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Cheese"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ice_cream"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Whipped_cream"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasGroundIngredient"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Baking_powder"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Eggs"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Flour"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Milk"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pork"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasCountryOfOrigin"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweden"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetGarnish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetGarnish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGarnish"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#High"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Medium"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGarnish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweetness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweetness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#High"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Low"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Medium"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#ValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#ValuePartition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Vegetables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Vegetables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SavoryGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Low"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Whipped_cream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Whipped_cream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#SweetenedGarnish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ethiopia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Ethiopia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Indonesia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Indonesia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Scottland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Scottland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sweden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Baking_powder"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Eggs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Flour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Milk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Sugar"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#High"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Low"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Medium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#None"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#Pancake"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGarnish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nikolakirilov/ontologies/2022/0/untitled-ontology-7#PancakeGroundIngredients"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
